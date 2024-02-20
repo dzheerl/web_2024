@@ -1,0 +1,72 @@
+ul, li {
+    margin:0;
+    padding: 0;
+    text-indent: 0;
+    list-style-type: none;
+}
+
+.menu  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: #2E2E2E;
+    margin: 0 auto;
+}
+
+.menu_navigation{
+    display: flex;
+    max-width: 960px;
+
+}
+
+.header_logo .footer_logo{
+    display: flex;
+    width: 92px;
+    height: 26px;
+}
+
+.navigation_link{
+    font: 12px/20px "Oxygen", sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.page_title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 286px;
+}
+
+.article_title{
+    font: 51px/50px "Lora";
+    margin: 0 auto;
+    padding: 0 0 20px 0;
+}
+
+.article_description{
+    font: 20px/17px "Oxygen";
+    margin: 0 auto;
+}
+
+.article_img{
+    height: 534px;
+}
+
+.article_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font: 24px/35px "Oxygen";
+    max-width: 960px;
+}
+
+.footer{
+    background: center / cover no-repeat url(../img/footer_img.png);
+    max-width: 1440px;
+    width: 100%;
+}
+
