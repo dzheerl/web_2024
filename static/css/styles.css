@@ -5,28 +5,32 @@ ul, li {
     list-style-type: none;
 }
 
-.menu  {
+.page {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 940px;
     width: 100%;
-    color: #2E2E2E;
     margin: 0 auto;
+    color: #2E2E2E;
 }
 
-.menu_navigation{
-    display: flex;
-    max-width: 960px;
-
-}
-
-.header_logo .footer_logo{
+.header_logo,  .footer_logo{
     display: flex;
     width: 92px;
     height: 26px;
 }
 
-.navigation_link{
+.menu  {
+    display: flex;
+}
+
+.header_link{
     font: 12px/20px "Oxygen", sans-serif;
     text-decoration: none;
     cursor: pointer;
@@ -54,19 +58,37 @@ ul, li {
 
 .article_img{
     height: 534px;
+    width: 100%;
 }
 
 .article_content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     font: 24px/35px "Oxygen";
     max-width: 960px;
+    margin-inline: auto;
+    margin-block: 116px 111px;
 }
 
 .footer{
-    background: center / cover no-repeat url(../img/footer_img.png);
-    max-width: 1440px;
+    background: center / cover no-repeat url("../img/footer_img.png");
     width: 100%;
+}
+
+.footer_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 940px;
+    width: 100%;
+    margin: 0 auto;
+    color: #2E2E2E;
+    padding: 28px 0 27px 0;
+}
+
+.footer_link{
+    font: 11px/26px "Oxygen", sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    color: #FFFFFF;
 }
 
