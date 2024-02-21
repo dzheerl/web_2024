@@ -16,7 +16,7 @@ ul, li {
     align-items: center;
     max-width: 940px;
     width: 100%;
-    margin: 0 auto;
+    margin: 17px auto;
     color: #2E2E2E;
 }
 
@@ -24,6 +24,7 @@ ul, li {
     display: flex;
     width: 92px;
     height: 26px;
+    padding: 0 20px;
 }
 
 .menu  {
