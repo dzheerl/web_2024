@@ -20,7 +20,7 @@ ul, li {
     color: #2E2E2E;
 }
 
-.header_logo,  .footer_logo{
+.header_logo, .footer_logo{
     display: flex;
     width: 92px;
     height: 26px;
