@@ -71,7 +71,16 @@ ul, li {
 
 .footer{
     background: center / cover no-repeat url("../img/footer_img.png");
+    color: #FFFFFF99;
+    height: 89px;
+}
+
+.footer_background{
+    background-color: #232F3899;
+    height: 100%;
     width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .footer_content{
@@ -82,7 +91,6 @@ ul, li {
     width: 100%;
     margin: 0 auto;
     color: #2E2E2E;
-    padding: 28px 0 27px 0;
 }
 
 .footer_link{
@@ -90,6 +98,6 @@ ul, li {
     text-decoration: none;
     cursor: pointer;
     padding: 10px 20px;
-    color: #FFFFFF;
+    color: #FFFFFF99;
 }
 
