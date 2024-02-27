@@ -5,22 +5,24 @@ ul, li {
   list-style-type: none;
 }
 
-.link {
-  text-decoration: none;
-  font: 400 12px/20px "Oxygen", sans-serif;
-}
-
 .page {
   margin: 0;
   padding: 0;
 }
 
-.header, .footer {
+.horizontal-center {
+  margin: 0 auto;
+}
+
+.menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 960px;
   width: 100%;
+}
+
+.header-menu {
   margin: 17px auto;
 }
 
@@ -29,82 +31,87 @@ ul, li {
   height: 26px;
 }
 
-.menu {
+.menu__list {
   display: flex;
 }
 
+.header-menu__list {
+  padding: 10px 20px;
+}
+
 .menu__link {
-  /*что то было*/
+  text-decoration: none;
+}
+
+.header-menu__link {
+  font: 400 12px/20px "Oxygen", sans-serif;
   letter-spacing: 0.6px;
   padding: 10px 20px;
-  color: #2E2E2E;
+  color: rgba(46, 46, 46, 1);
 }
 
-.page_title {
+.page-about {
   text-align: center;
   padding: 89px 0 38px;
-  /*    paddings */
 }
 
-.article_title {
+.page-about__title {
   font: 400 51px/50px "Lora";
-  /*что - то было*/
   letter-spacing: 2px;
-  margin: 0 auto;
   padding: 0 0 20px 0;
 }
 
-.article_description {
+.page-about__description {
   font: 400 17px/20px "Oxygen";
-  /*margin: 0 auto;*/
-  color: #2E2E2EA1;
+  color: rgba(46, 46, 46, 0.63);
 }
 
-.article_img {
-  /*height: 534px;*/
+.page-img {
   max-height: 534px;
   width: 100%;
 }
 
-.article_content {
+.page-content {
   font: 400 24px/35px "Oxygen";
-  /*тут что - то было*/
+  color: rgba(16, 19, 21, 1);
   max-width: 960px;
-  margin: 0 auto;
   padding: 140px 0 135px;
 }
 
 .footer {
   background: center / cover no-repeat url("../img/footer_img.png");
-  /*color: #FFFFFF99;*/
   height: 89px;
 }
 
-.footer_background {
-  background-color: #232F3899;
+.footer__background {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(35, 47, 56, 0.6);
   height: 100%;
   width: 100%;
-  display: flex;
-  align-items: center;
 }
 
-.footer_content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /*max-width: 940px;*/
-  width: 100%;
-  /*margin: 0 auto; container styles*/
-  color: #2E2E2E;
-}
-
-.footer_link {
+.footer-menu__link {
   font: 400 11px/26px "Oxygen", sans-serif;
   letter-spacing: 1px;
-  text-decoration: none;
+  padding: 31px 20px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+
+/*!*стилям блока не нужно задавать */
+/*внешнее позиционирование например отсупы или геометрию*!*/
+/*блоки можно вкладывать в друг друга имя_класса_блока__имяэлемента
+элементы друг в друга можно      */
+
+/*.footer_link {*/
+/*  font: 400 11px/26px "Oxygen", sans-serif;*/
+/*  letter-spacing: 1px;*/
+/*  text-decoration: none;*/
   /*cursor: pointer;*/
-  padding: 10px 20px;
+  /*padding: 10px 20px;*/
   /*color: #FFFFFF99;*/
   /*rgba*/
-}
+/*}*/
 
