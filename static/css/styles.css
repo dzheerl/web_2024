@@ -33,6 +33,7 @@ ul, li {
 
 .menu__list {
   display: flex;
+  text-transform: uppercase;
 }
 
 .header-menu__list {
@@ -98,20 +99,4 @@ ul, li {
   padding: 31px 20px;
   color: rgba(255, 255, 255, 0.6);
 }
-
-
-/*!*стилям блока не нужно задавать */
-/*внешнее позиционирование например отсупы или геометрию*!*/
-/*блоки можно вкладывать в друг друга имя_класса_блока__имяэлемента
-элементы друг в друга можно      */
-
-/*.footer_link {*/
-/*  font: 400 11px/26px "Oxygen", sans-serif;*/
-/*  letter-spacing: 1px;*/
-/*  text-decoration: none;*/
-  /*cursor: pointer;*/
-  /*padding: 10px 20px;*/
-  /*color: #FFFFFF99;*/
-  /*rgba*/
-/*}*/
 
