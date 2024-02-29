@@ -57,23 +57,22 @@ ul, li {
 }
 
 .page-about__title {
-  font: 400 51px/50px "Lora";
+  font: 400 51px/50px "Lora", sans-serif;
   letter-spacing: 2px;
   padding: 0 0 20px 0;
 }
 
 .page-about__description {
-  font: 400 17px/20px "Oxygen";
+  font: 400 17px/20px "Oxygen", sans-serif;
   color: rgba(46, 46, 46, 0.63);
 }
 
 .page-img {
-  max-height: 534px;
   width: 100%;
 }
 
 .page-content {
-  font: 400 24px/35px "Oxygen";
+  font: 400 24px/35px "Oxygen", sans-serif;
   color: rgba(16, 19, 21, 1);
   max-width: 960px;
   padding: 140px 0 135px;

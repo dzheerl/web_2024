@@ -1,0 +1,84 @@
+ul, li {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  list-style-type: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: center / cover no-repeat url("../img/header-background-img.jpg");
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  width: 100%;
+}
+
+.header-menu {
+  margin: 0px auto;
+  padding: 17px 0;
+}
+
+.logo {
+  width: 92px;
+  height: 26px;
+}
+
+.menu__list {
+  display: flex;
+  text-transform: uppercase;
+}
+
+.header-menu__list {
+  padding: 10px 20px;
+}
+
+.menu__link {
+  text-decoration: none;
+}
+
+.header-menu__link {
+  font: 400 12px/20px "Oxygen", sans-serif;
+  letter-spacing: 0.6px;
+  padding: 10px 20px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.about-page {
+  padding: 110px 0 157px 0;
+}
+
+.about-page__title  {
+  font: 400 50px/51px "lora", sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+  color:rgba(255, 255, 255, 1);
+  padding: 0 0 20px 0;
+}
+
+.about-page__subtitle {
+  font: 400 17px/20px "Oxygen", sans-serif;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.63);
+  padding: 0 0 33px 0;
+}
+
+.about-page__button {
+  background-color: rgba(221, 120, 63, 1);
+  border-radius: 3px;
+  padding: 12px 37px;
+}
+
+.text {
+  font: 400 13px/20px "Oxygen", sans-serif;
+  text-align: center;
+  text-decoration: none;
+}
