@@ -3,11 +3,13 @@ ul, li {
   padding: 0;
   text-indent: 0;
   list-style-type: none;
+  
 }
 
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 header {
@@ -18,6 +20,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   max-width: 960px;
   width: 100%;
 }
@@ -30,11 +33,13 @@ header {
 .logo {
   width: 92px;
   height: 26px;
+  padding: 0px 20px;
 }
 
 .menu__list {
   display: flex;
   text-transform: uppercase;
+  flex-wrap: wrap;
 }
 
 .header-menu__list {
@@ -54,6 +59,7 @@ header {
 
 .about-page {
   padding: 110px 0 157px 0;
+  text-align: center;
 }
 
 .about-page__title  {
@@ -68,7 +74,7 @@ header {
   font: 400 17px/20px "Oxygen", sans-serif;
   text-align: center;
   color: rgba(255, 255, 255, 0.63);
-  padding: 0 0 33px 0;
+  padding: 0 0 41px 0;
 }
 
 .about-page__button {
@@ -79,6 +85,62 @@ header {
 
 .text {
   font: 400 13px/20px "Oxygen", sans-serif;
-  text-align: center;
+  color: rgba(255, 255, 255, 1);
   text-decoration: none;
 }
+
+/*.tags-block {*/
+/*  max-height: 65px;*/
+/*  padding: 9px 0 10px 0;*/
+/*}*/
+
+/*.tags-block__list {*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  flex-wrap: wrap;*/
+/*  max-width: 960px;*/
+/*}*/
+
+
+
+
+.tags-block__list {
+  text-align: center;
+  
+}
+
+.tags-block__item {
+  padding: 22px 10.5px 23px 10.5px;
+  display: inline-block;
+  width: 139px;
+  margin: 0 auto;
+}
+
+.tags-block__link {
+  font: 400 14px/20px "Lora", sans-serif;
+  color: rgba(118, 128, 136, 1);
+}
+
+.footer {
+  background: center / cover no-repeat url("../img/footer_img.png");
+  height: 89px;
+}
+
+.footer__background {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(35, 47, 56, 0.6);
+  height: 100%;
+  width: 100%;
+}
+
+.footer-menu__link {
+  font: 400 11px/26px "Oxygen", sans-serif;
+  letter-spacing: 1px;
+  padding: 31px 20px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+
