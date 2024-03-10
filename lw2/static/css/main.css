@@ -65,61 +65,194 @@ header {
 .about-page__title  {
   font: 400 50px/51px "lora", sans-serif;
   letter-spacing: 2px;
-  text-align: center;
   color:rgba(255, 255, 255, 1);
   padding: 0 0 20px 0;
 }
 
 .about-page__subtitle {
   font: 400 17px/20px "Oxygen", sans-serif;
-  text-align: center;
   color: rgba(255, 255, 255, 0.63);
   padding: 0 0 41px 0;
 }
 
-.about-page__button {
-  background-color: rgba(221, 120, 63, 1);
-  border-radius: 3px;
-  padding: 12px 37px;
-}
 
-.text {
+.about-page__button {
   font: 400 13px/20px "Oxygen", sans-serif;
   color: rgba(255, 255, 255, 1);
-  text-decoration: none;
+  border-radius: 3px;
+  padding: 12px 31px;
+  background-color: rgba(221, 120, 63, 1);
+  max-width: 167px;
+  margin: 0 auto;
 }
 
-/*.tags-block {*/
-/*  max-height: 65px;*/
-/*  padding: 9px 0 10px 0;*/
-/*}*/
-
-/*.tags-block__list {*/
-/*  display: flex;*/
-/*  align-items: center;*/
-/*  justify-content: center;*/
-/*  flex-wrap: wrap;*/
-/*  max-width: 960px;*/
-/*}*/
-
-
-
-
-.tags-block__list {
+.tags-list {
   text-align: center;
-  
 }
 
-.tags-block__item {
+.tags-list__item {
   padding: 22px 10.5px 23px 10.5px;
   display: inline-block;
   width: 139px;
   margin: 0 auto;
 }
 
-.tags-block__link {
+.tags-list__link {
   font: 400 14px/20px "Lora", sans-serif;
   color: rgba(118, 128, 136, 1);
+}
+
+.content {
+  background: rgba(247, 247, 247, 1);
+  padding-bottom: 89px;
+}
+
+.card-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.content-title {
+  text-align: center;
+  position: relative;
+  max-width: 188px;
+  font: 400 20px/27px "Oxygen", sans-serif;
+  letter-spacing: 2px;
+  padding: 60px 0 16px 0;
+  margin: 0 auto 23px;
+}
+
+.content-title::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #dedede;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.card-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gap-big {
+  gap: 20px;
+}
+
+.gap-small {
+  gap: 24px;
+}
+
+.card__big {
+  width: 460px;
+}
+
+.card__small {
+  width: 296px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  position: relative;
+}
+
+.height-big-card {
+  height: 280px;
+}
+
+.about-card__title {
+  padding: 14px 20px 0 20px;
+}
+
+.title-big {
+  font: 400 27px/30px "Lora", sans-serif;
+  color: rgba(255, 255, 255, 1);
+}
+
+.title-small {
+  font: 400 16px/21px "Lora", sans-serif;
+  color: rgba(16, 19, 21, 1);
+}
+
+.white {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.grey {
+  background-color: rgba(252, 252, 252, 1)
+}
+
+.description-big {
+  font: 400 14px/25px "Oxygen", sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 6px 20px 0px 20px;
+}
+
+.description-small {
+  font: 400 13px/19px "Oxygen", sans-serif;
+  color: rgba(122, 122, 122, 1);
+  padding: 6px 20px 13px 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.border {
+  position: relative;
+}
+
+.border::before {
+  content: "";
+  top: -1px;
+  position: absolute;
+  height: 1px;
+  background-color: rgba(239, 239, 239, 1);
+  width: 100%;
+}
+
+.info-big {
+  padding: 12px 20px 15px;
+}
+
+.info-small {
+  padding: 7px 20px 6px;
+}
+
+.text-big-info {
+  font: 400 12px/35px "Oxygen", sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.text-small-info {
+  font: 400 11px/35px "Oxygen", sans-serif;
+  color: rgba(153, 153, 153, 1);
+}
+
+.info__avatar{
+  width: 26px;
+  height: 26px;
+  border-radius: 60px;
+}
+
+.info__author-name {
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+.other-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer {
