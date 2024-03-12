@@ -167,10 +167,6 @@ header {
   height: 280px;
 }
 
-.about-card {
-  min-height: 93px;
-}
-
 .about-card__title {
   padding: 14px 20px 0 20px;
 }
@@ -185,8 +181,9 @@ header {
   color: rgba(16, 19, 21, 1);
 }
 
-.white {
+.about-card-small {
   background-color: rgba(255, 255, 255, 1);
+  min-height: 93px;
 }
 
 .grey {

@@ -4,7 +4,7 @@ $posts = [
    'title' => 'The Road Ahead',
    'subtitle' => 'The road ahead might be paved - it might not be',
    'img_background' => './static/img/background-card1.png',
-   'author_avatar' => './static/img/avatar-mat-vogel.jpg'
+   'author_avatar' => './static/img/avatar-mat-vogel.jpg',
    'author' => 'Mat Vogels',
    'publish_date' => '9/25/2015'
  ],
@@ -12,7 +12,7 @@ $posts = [
    'title' => 'From Top Down',
    'subtitle' => 'Once a year, go someplace you’ve never been before.',
    'img_background' => './static/img/background-card2.png',
-   'author_avatar' => './static/img/avatar=william-wong.jpg'
+   'author_avatar' => './static/img/avatar=william-wong.jpg',
    'author' => 'William Wong',
    'publish_date' => '9/25/2015'
  ],
@@ -97,7 +97,7 @@ $posts = [
       <a class="card__small" href="#">
         <div class="card">
           <img src="./static/img/small_1.jpg" alt="image">
-          <div class="about-card white">
+          <div class="about-card about-card-small">
             <h3 class="about-card__title title-small"> Still Standing Tall </h3>
             <h4 class="about-card__description description-small"> Life begins at the end of your comfort zone. </h4>
           </div>
@@ -111,7 +111,7 @@ $posts = [
       <a class="card__small" href="#">
         <div class="card">
           <img src="./static/img/small_2.jpg" alt="image">
-          <div class="about-card white">
+          <div class="about-card about-card-small">
             <h3 class="about-card__title title-small"> Sunny Side Up </h3>
             <h4 class="about-card__description description-small"> No place is ever as bad as they tell you it’s going to be. </h4>
           </div>
@@ -125,7 +125,7 @@ $posts = [
       <a class="card__small" href="#">
         <div class="card">
           <img src="./static/img/small_3.jpg" alt="image">
-          <div class="about-card white">
+          <div class="about-card about-card-small">
             <h3 class="about-card__title title-small"> Water Falls </h3>
             <h4 class="about-card__description description-small"> We travel not to escape life, but for life not to escape us. </h4>
           </div>
@@ -139,7 +139,7 @@ $posts = [
         <a class="card__small" href="#">
           <div class="card">
             <img src="./static/img/small_4.jpg" alt="image">
-            <div class="about-card white">
+            <div class="about-card about-card-small">
               <h3 class="about-card__title title-small"> Through the Mist </h3>
               <h4 class="about-card__description description-small"> Travel makes you see what a tiny place you occupy in the world. </h4>
             </div>
@@ -153,7 +153,7 @@ $posts = [
       <a class="card__small" href="#">
         <div class="card">
           <img src="./static/img/small_5.jpg" alt="image">
-          <div class="about-card white">
+          <div class="about-card about-card-small">
             <h3 class="about-card__title title-small"> Awaken Early </h3>
             <h4 class="about-card__description description-small"> Not all those who wander are lost. </h4>
           </div>
@@ -167,7 +167,7 @@ $posts = [
       <a class="card__small" href="#">
         <div class="card">
           <img src="./static/img/small_6.jpg" alt="image">
-          <div class="about-card white">
+          <div class="about-card about-card-small">
             <h3 class="about-card__title title-small"> Try it Always </h3>
             <h4 class="about-card__description description-small"> The world is a book, and those who do not travel read only one page. </h4>
           </div>
