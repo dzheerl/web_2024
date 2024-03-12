@@ -1,3 +1,24 @@
+<?php
+$posts = [
+ [
+   'title' => 'The Road Ahead',
+   'subtitle' => 'The road ahead might be paved - it might not be',
+   'img_background' => './static/img/background-card1.png',
+   'author_avatar' => './static/img/avatar-mat-vogel.jpg'
+   'author' => 'Mat Vogels',
+   'publish_date' => '9/25/2015'
+ ],
+ [
+   'title' => 'From Top Down',
+   'subtitle' => 'Once a year, go someplace you’ve never been before.',
+   'img_background' => './static/img/background-card2.png',
+   'author_avatar' => './static/img/avatar=william-wong.jpg'
+   'author' => 'William Wong',
+   'publish_date' => '9/25/2015'
+ ],
+];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,14 +28,14 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oxygen:wght@300;400;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="../static/css/main.css">
+  <link rel="stylesheet" href="./static/css/main.css">
   <title> Escape. </title>
 </head>
 <body class="page">
 <header>
   <div class="header-menu menu">
     <a href="#">
-      <img class="logo" src="../static/img/header_logo.png" alt="Escape.">
+      <img class="logo" src="./static/img/header_logo.png" alt="Escape.">
     </a>
     <ul class="header-menu__list menu__list">
       <li>
@@ -63,33 +84,11 @@
   <div class="card-container">
     <h3 class="content-title"> Featured Posts </h3>
     <div class="card-block gap-big">
-      <a class="card__big" href="#">
-        <div class="card height-big-card" style="background: url(../static/img/background-card1.png)">
-          <div class="about-card">
-            <h3 class="about-card__title title-big"> The Road Ahead </h3>
-            <h4 class="about-card__description description-big"> The road ahead might be paved - it might not be. </h4>
-          </div>
-          <div class="info info-big">
-            <img class="info__avatar" src="../static/img/avatar-mat-vogel.jpg" alt="Mat Vogels">
-            <p class="info__author-name text-big-info"> Mat Vogels </p>
-            <p class="info__publish-date text-big-info"> September 25, 2015 </p>
-          </div>
-        </div>
-      </a>
-      <a class="card__big" href="#">
-        <div class="card height-big-card" style="background: url(../static/img/background-card2.png)">
-          <div class="about-card">
-            <h3 class="about-card__title title-big"> From Top Down </h3>
-            <h4 class="about-card__description description-big"> Once a year, go someplace you’ve never been
-              before. </h4>
-          </div>
-          <div class="info info-big">
-            <img class="info__avatar" src="../static/img/avatar=william-wong.jpg" alt="Mat Vogels">
-            <p class="info__author-name text-big-info"> Mat Vogels </p>
-            <p class="info__publish-date text-big-info"> September 25, 2015 </p>
-          </div>
-        </div>
-      </a>
+        <?php
+         foreach ($posts as $post) {
+           include 'post_preview.php';
+         }
+        ?>
     </div>
   </div>
   <div class="card-container">
@@ -97,13 +96,13 @@
     <div class="card-block gap-small">
       <a class="card__small" href="#">
         <div class="card">
-          <img src="../static/img/small_1.jpg" alt="image">
+          <img src="./static/img/small_1.jpg" alt="image">
           <div class="about-card white">
             <h3 class="about-card__title title-small"> Still Standing Tall </h3>
             <h4 class="about-card__description description-small"> Life begins at the end of your comfort zone. </h4>
           </div>
           <div class="info grey info-small border">
-            <img class="info__avatar " src="../static/img/avatar=william-wong.jpg" alt="William Wong">
+            <img class="info__avatar " src="./static/img/avatar=william-wong.jpg" alt="William Wong">
             <p class="info__author-name text-small-info"> William Wong </p>
             <p class="info__publish-date text-small-info"> 9/25/2015 </p>
           </div>
@@ -111,13 +110,13 @@
       </a>
       <a class="card__small" href="#">
         <div class="card">
-          <img src="../static/img/small_2.jpg" alt="image">
+          <img src="./static/img/small_2.jpg" alt="image">
           <div class="about-card white">
             <h3 class="about-card__title title-small"> Sunny Side Up </h3>
             <h4 class="about-card__description description-small"> No place is ever as bad as they tell you it’s going to be. </h4>
           </div>
           <div class="info grey info-small border">
-            <img class="info__avatar " src="../static/img/avatar-mat-vogel.jpg" alt="Mat Vogels">
+            <img class="info__avatar " src="./static/img/avatar-mat-vogel.jpg" alt="Mat Vogels">
             <p class="info__author-name text-small-info"> Mat Vogels </p>
             <p class="info__publish-date text-small-info"> 9/25/2015 </p>
           </div>
@@ -125,13 +124,13 @@
       </a>
       <a class="card__small" href="#">
         <div class="card">
-          <img src="../static/img/small_3.jpg" alt="image">
+          <img src="./static/img/small_3.jpg" alt="image">
           <div class="about-card white">
             <h3 class="about-card__title title-small"> Water Falls </h3>
             <h4 class="about-card__description description-small"> We travel not to escape life, but for life not to escape us. </h4>
           </div>
           <div class="info grey info-small border">
-            <img class="info__avatar" src="../static/img/avatar-mat-vogel.jpg" alt="Mat Vogels">
+            <img class="info__avatar" src="./static/img/avatar-mat-vogel.jpg" alt="Mat Vogels">
             <p class="info__author-name text-small-info"> Mat Vogels </p>
             <p class="info__publish-date text-small-info"> 9/25/2015 </p>
           </div>
@@ -139,13 +138,13 @@
       </a>
         <a class="card__small" href="#">
           <div class="card">
-            <img src="../static/img/small_4.jpg" alt="image">
+            <img src="./static/img/small_4.jpg" alt="image">
             <div class="about-card white">
               <h3 class="about-card__title title-small"> Through the Mist </h3>
               <h4 class="about-card__description description-small"> Travel makes you see what a tiny place you occupy in the world. </h4>
             </div>
             <div class="info grey info-small border">
-              <img class="info__avatar" src="../static/img/avatar=william-wong.jpg" alt="William Wong">
+              <img class="info__avatar" src="./static/img/avatar=william-wong.jpg" alt="William Wong">
               <p class="info__author-name text-small-info"> William Wong </p>
               <p class="info__publish-date text-small-info"> 9/25/2015 </p>
             </div>
@@ -153,13 +152,13 @@
       </a>
       <a class="card__small" href="#">
         <div class="card">
-          <img src="../static/img/small_5.jpg" alt="image">
+          <img src="./static/img/small_5.jpg" alt="image">
           <div class="about-card white">
             <h3 class="about-card__title title-small"> Awaken Early </h3>
             <h4 class="about-card__description description-small"> Not all those who wander are lost. </h4>
           </div>
           <div class="info grey info-small border">
-            <img class="info__avatar" src="../static/img/avatar-mat-vogel.jpg" alt="Mat Vogels">
+            <img class="info__avatar" src="./static/img/avatar-mat-vogel.jpg" alt="Mat Vogels">
             <p class="info__author-name text-small-info"> Mat Vogels </p>
             <p class="info__publish-date text-small-info"> 9/25/2015 </p>
           </div>
@@ -167,13 +166,13 @@
       </a>
       <a class="card__small" href="#">
         <div class="card">
-          <img src="../static/img/small_6.jpg" alt="image">
+          <img src="./static/img/small_6.jpg" alt="image">
           <div class="about-card white">
             <h3 class="about-card__title title-small"> Try it Always </h3>
             <h4 class="about-card__description description-small"> The world is a book, and those who do not travel read only one page. </h4>
           </div>
           <div class="info grey info-small border">
-            <img class="info__avatar" src="../static/img/avatar-mat-vogel.jpg" alt="Mat Vogels">
+            <img class="info__avatar" src="./static/img/avatar-mat-vogel.jpg" alt="Mat Vogels">
             <p class="info__author-name text-small-info"> Mat Vogels </p>
             <p class="info__publish-date text-small-info"> 9/25/2015 </p>
           </div>
@@ -185,7 +184,7 @@
 <footer class="footer">
   <div class="footer__background">
     <div class="footer-menu menu">
-      <img class="logo" src="../static/img/footer_logo.png" alt="Escape.">
+      <img class="logo" src="./static/img/footer_logo.png" alt="Escape.">
       <ul class="menu__list">
         <li>
           <a class="footer-menu__link menu__link" href="#"> home </a>
