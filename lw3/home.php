@@ -4,7 +4,7 @@ $posts = [
    'title' => 'The Road Ahead',
    'subtitle' => 'The road ahead might be paved - it might not be',
    'img_background' => './static/img/background-card1.png',
-   'author_avatar' => './static/img/avatar-mat-vogel.jpg'
+   'author_avatar' => './static/img/avatar-mat-vogel.jpg',
    'author' => 'Mat Vogels',
    'publish_date' => '9/25/2015'
  ],
@@ -12,7 +12,7 @@ $posts = [
    'title' => 'From Top Down',
    'subtitle' => 'Once a year, go someplace you’ve never been before.',
    'img_background' => './static/img/background-card2.png',
-   'author_avatar' => './static/img/avatar=william-wong.jpg'
+   'author_avatar' => './static/img/avatar=william-wong.jpg',
    'author' => 'William Wong',
    'publish_date' => '9/25/2015'
  ],
