@@ -94,7 +94,7 @@ $posts = [
     </div>
   </div>
   <div class="card-container">
-    <h3 class="content-title"> Featured Posts </h3>
+    <h3 class="content-title"> Most Recent </h3>
     <div class="card-block gap-small">
       <a class="card__small" href="#">
         <div class="card">
