@@ -151,11 +151,6 @@ header {
 }
 
 .card-theme {
-  position: relative;
-}
-
-.card-theme::after {
-  content: "adventure";
   padding: 6px 9px 7px 9px;
   position: absolute;
   top: 20px;
