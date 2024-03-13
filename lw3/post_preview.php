@@ -1,4 +1,4 @@
-<a class="card__big" href="#">
+<a class="card__big <?= $post['card-theme'] ?>" href="#">
   <div class="card height-big-card" style="background: url(<?= $post['img_background'] ?>)">
     <div class="about-card">
       <h3 class="about-card__title title-big"><?= $post['title'] ?></h3>

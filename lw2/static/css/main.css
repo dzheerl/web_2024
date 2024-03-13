@@ -163,6 +163,23 @@ header {
   position: relative;
 }
 
+.card-theme {
+  position: relative;
+}
+
+.card-theme::after {
+  content: "adventure";
+  padding: 6px 9px 7px 9px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-transform: uppercase;
+  background-color: #dd783F;
+  font: 400 12px / 13px "Oxygen", sans-serif;
+  color: #ffffff;
+  border-radius: 2px;
+}
+
 .height-big-card {
   height: 280px;
 }

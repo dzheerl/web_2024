@@ -1,6 +1,7 @@
 <?php
 $posts = [
  [
+   'card-theme' => '',
    'title' => 'The Road Ahead',
    'subtitle' => 'The road ahead might be paved - it might not be',
    'img_background' => './static/img/background-card1.png',
@@ -9,6 +10,7 @@ $posts = [
    'publish_date' => '9/25/2015'
  ],
  [
+   'card-theme' => 'card-theme',
    'title' => 'From Top Down',
    'subtitle' => 'Once a year, go someplace you’ve never been before.',
    'img_background' => './static/img/background-card2.png',
