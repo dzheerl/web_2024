@@ -1,29 +1,32 @@
 <?php
-$featured_posts = [
- [
+
+const POST = '123123'
+
+$posts = [
+  [
+   'size' => 'big',
+   'img' => '/static/images/background-card1.png',
    'tag' => '',
    'title' => 'The Road Ahead',
    'subtitle' => 'The road ahead might be paved - it might not be',
-   'img_background' => '/static/images/background-card1.png',
    'author_avatar' => '/static/images/avatar-mat-vogel.jpg',
    'author_name' => 'Mat Vogels',
    'publish_date' => '9/25/2015'
- ],
- [
+  ],
+  [
+   'size' => 'big',
+   'img' => '/static/images/background-card2.png',
    'tag' => 'adventure',
    'title' => 'From Top Down',
    'subtitle' => 'Once a year, go someplace you’ve never been before.',
-   'img_background' => '/static/images/background-card2.png',
    'author_avatar' => '/static/images/avatar=william-wong.jpg',
    'author_name' => 'William Wong',
    'publish_date' => '9/25/2015'
- ],
-];
-?>
-<?php
-$most_recent_posts = [
+  ],
   [
+    'size' => 'small',
     'img' => '/static/images/small_1.jpg',
+    'tag' => '',
     'title' => 'Still Standing Tall',
     'subtitle' => 'Life begins at the end of your comfort zone.',
     'author_avatar' => '/static/images/avatar=william-wong.jpg',
@@ -31,7 +34,9 @@ $most_recent_posts = [
     'publish_date' => '9/25/2015'
   ],
   [
+    'size' => 'small',
     'img' => '/static/images/small_2.jpg',
+    'tag' => '',
     'title' => 'Sunny Side Up',
     'subtitle' => 'No place is ever as bad as they tell you it’s going to be.',
     'author_avatar' => '/static/images/avatar-mat-vogel.jpg',
@@ -39,7 +44,9 @@ $most_recent_posts = [
     'publish_date' => '9/25/2015'
   ],
   [
+    'size' => 'small',
     'img' => '/static/images/small_3.jpg',
+    'tag' => '',
     'title' => 'Water Falls',
     'subtitle' => 'We travel not to escape life, but for life not to escape us.',
     'author_avatar' => '/static/images/avatar-mat-vogel.jpg',
@@ -47,7 +54,9 @@ $most_recent_posts = [
     'publish_date' => '9/25/2015'
   ],
   [
+    'size' => 'small',
     'img' => '/static/images/small_4.jpg',
+    'tag' => '',
     'title' => 'Through the Mist',
     'subtitle' => 'Travel makes you see what a tiny place you occupy in the world.',
     'author_avatar' => '/static/images/avatar=william-wong.jpg',
@@ -55,7 +64,9 @@ $most_recent_posts = [
     'publish_date' => '9/25/2015'
   ],
   [
+    'size' => 'small',
     'img' => '/static/images/small_5.jpg',
+    'tag' => '',
     'title' => 'Awaken Early',
     'subtitle' => 'Not all those who wander are lost.',
     'author_avatar' => '/static/images/avatar-mat-vogel.jpg',
@@ -63,15 +74,18 @@ $most_recent_posts = [
     'publish_date' => '9/25/2015'
   ],
   [
+    'size' => 'small',
     'img' => '/static/images/small_6.jpg',
+    'tag' => '',
     'title' => 'Try it Always',
-    'subtitle' => 'he world is a book, and those who do not travel read only one pageThe world is a book, and those who do not travel read only one page.',
+    'subtitle' => 'The world is a book, and those who do not travel read only one page.',
     'author_avatar' => '/static/images/avatar-mat-vogel.jpg',
     'author_name' => 'Mat Vogels',
     'publish_date' => '9/25/2015'
   ],
 ];
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -139,8 +153,10 @@ $most_recent_posts = [
     <h3 class="content-title"> Featured Posts </h3>
     <div class="card-block gap-big">
         <?php
-         foreach ($featured_posts as $featured_posts) {
-           include 'post_preview.php';
+         foreach ($posts as $post) {
+           if ($post['size'] == 'big') {
+             include 'post_preview.php';
+           }
          }
         ?>
     </div>
@@ -149,8 +165,10 @@ $most_recent_posts = [
     <h3 class="content-title"> Most Recent </h3>
     <div class="card-block gap-small">
         <?php
-         foreach ($most_recent_posts as $most_recent_posts) {
-           include 'post_preview_small.php';
+         foreach ($posts as $post) {
+           if ($post['size'] == 'small') {
+             include 'post_preview.php';
+           }
          }
         ?>
     </div>

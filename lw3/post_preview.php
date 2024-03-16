@@ -1,17 +1,17 @@
-<a class="card__big" href="#">
-  <div class="card height-big-card" style="background: url(<?= $featured_posts['img_background'] ?>)">
-    <div class="about-card">
-      <h3 class="about-card__title title-big"><?= $featured_posts['title'] ?></h3>
-      <h4 class="about-card__description description-big"><?= $featured_posts['subtitle'] ?></h4>
+<a class="card__<?= $post['size'] ?>" href="#">
+  <div class="card height-<?= $post['size'] ?>-card">
+	<img class="card-img-<?= $post['size'] ?>" src="<?= $post['img'] ?>" alt="">
+    <div class="about-card about-card-<?= $post['size'] ?>">
+      <h3 class="about-card__title title-<?= $post['size'] ?>"><?= $post['title'] ?></h3>
+      <h4 class="about-card__description description-<?= $post['size'] ?>"><?= $post['subtitle'] ?></h4>
     </div>
-    <div class="info info-big">
-      <img class="info__avatar" src="<?= $featured_posts['author_avatar'] ?>" alt="Mat Vogels">
-      <p class="info__author-name text-big-info"><?= $featured_posts['author_name'] ?></p>
-      <p class="info__publish-date text-big-info"><?= $featured_posts['publish_date'] ?></p>
+    <div class="info info-<?= $post['size'] ?>">
+      <img class="info__avatar" src="<?= $post['author_avatar'] ?>" alt="<?= $post['author_name'] ?>">
+      <p class="info__author-name text-<?= $post['size'] ?>-info"><?= $post['author_name'] ?></p>
+      <p class="info__publish-date text-<?= $post['size'] ?>-info"><?= $post['publish_date'] ?></p>
     </div>
-    <?php if ($featured_posts['tag']): ?>
-      <div class="card-theme"> <?= $featured_posts['tag'] ?> </div>
+    <?php if ($post['tag']): ?>
+      <div class="card-theme"> <?= $post['tag'] ?> </div>
     <?php endif ?>
   </div>
 </a>
-
