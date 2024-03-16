@@ -6,7 +6,7 @@ $featured_posts = [
    'subtitle' => 'The road ahead might be paved - it might not be',
    'img_background' => '/static/images/background-card1.png',
    'author_avatar' => '/static/images/avatar-mat-vogel.jpg',
-   'author' => 'Mat Vogels',
+   'author_name' => 'Mat Vogels',
    'publish_date' => '9/25/2015'
  ],
  [
@@ -15,7 +15,7 @@ $featured_posts = [
    'subtitle' => 'Once a year, go someplace you’ve never been before.',
    'img_background' => '/static/images/background-card2.png',
    'author_avatar' => '/static/images/avatar=william-wong.jpg',
-   'author' => 'William Wong',
+   'author_name' => 'William Wong',
    'publish_date' => '9/25/2015'
  ],
 ];
@@ -27,7 +27,7 @@ $most_recent_posts = [
     'title' => 'Still Standing Tall',
     'subtitle' => 'Life begins at the end of your comfort zone.',
     'author_avatar' => '/static/images/avatar=william-wong.jpg',
-    'author' => 'William Wong',
+    'author_name' => 'William Wong',
     'publish_date' => '9/25/2015'
   ],
   [
@@ -35,7 +35,7 @@ $most_recent_posts = [
     'title' => 'Sunny Side Up',
     'subtitle' => 'No place is ever as bad as they tell you it’s going to be.',
     'author_avatar' => '/static/images/avatar-mat-vogel.jpg',
-    'author' => 'Mat Vogels',
+    'author_name' => 'Mat Vogels',
     'publish_date' => '9/25/2015'
   ],
   [
@@ -43,7 +43,7 @@ $most_recent_posts = [
     'title' => 'Water Falls',
     'subtitle' => 'We travel not to escape life, but for life not to escape us.',
     'author_avatar' => '/static/images/avatar-mat-vogel.jpg',
-    'author' => 'Mat Vogels',
+    'author_name' => 'Mat Vogels',
     'publish_date' => '9/25/2015'
   ],
   [
@@ -51,7 +51,7 @@ $most_recent_posts = [
     'title' => 'Through the Mist',
     'subtitle' => 'Travel makes you see what a tiny place you occupy in the world.',
     'author_avatar' => '/static/images/avatar=william-wong.jpg',
-    'author' => 'William Wong',
+    'author_name' => 'William Wong',
     'publish_date' => '9/25/2015'
   ],
   [
@@ -59,7 +59,7 @@ $most_recent_posts = [
     'title' => 'Awaken Early',
     'subtitle' => 'Not all those who wander are lost.',
     'author_avatar' => '/static/images/avatar-mat-vogel.jpg',
-    'author' => 'Mat Vogels',
+    'author_name' => 'Mat Vogels',
     'publish_date' => '9/25/2015'
   ],
   [
@@ -67,7 +67,7 @@ $most_recent_posts = [
     'title' => 'Try it Always',
     'subtitle' => 'he world is a book, and those who do not travel read only one pageThe world is a book, and those who do not travel read only one page.',
     'author_avatar' => '/static/images/avatar-mat-vogel.jpg',
-    'author' => 'Mat Vogels',
+    'author_name' => 'Mat Vogels',
     'publish_date' => '9/25/2015'
   ],
 ];
