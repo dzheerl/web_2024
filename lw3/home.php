@@ -1,7 +1,5 @@
 <?php
 
-const POST = '123123'
-
 $posts = [
   [
    'size' => 'big',
