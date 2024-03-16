@@ -6,7 +6,7 @@
     </div>
     <div class="info info-big">
       <img class="info__avatar" src="<?= $featured_posts['author_avatar'] ?>" alt="Mat Vogels">
-      <p class="info__author-name text-big-info"><?= $featured_posts['author'] ?></p>
+      <p class="info__author-name text-big-info"><?= $featured_posts['author_name'] ?></p>
       <p class="info__publish-date text-big-info"><?= $featured_posts['publish_date'] ?></p>
     </div>
     <?php if ($featured_posts['tag']): ?>
