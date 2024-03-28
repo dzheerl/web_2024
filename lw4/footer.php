@@ -4,10 +4,10 @@ $footer = [
   'home_link' => 'home.php',
   'logo' => 'Escape.',
   'navigation' => [
-      'list_item1' => 'home',
-      'list_item2' => 'categories',
-      'list_item3' => 'about',
-      'list_item4' => 'contact',
+      'home',
+      'categories',
+      'about',
+      'contact',
   ],
 ];
 ?>
@@ -19,9 +19,9 @@ $footer = [
         <?= $footer['logo'] ?>
       </a>
       <ul class="menu__list">
-        <?php foreach ($footer['navigation'] as $list_item) : ?>
+        <?php foreach ($footer['navigation'] as $listItem) : ?>
           <li>
-            <a class="footer-menu__link menu__link" href="#"> <?= $list_item ?> </a>
+            <a class="footer-menu__link menu__link" href="#"> <?= $listItem ?> </a>
           </li>
         <?php endforeach; ?>
       </ul>

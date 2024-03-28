@@ -1,15 +1,13 @@
 <?php
-$postid = $_GET['id'];
-?>
+$postId = $_GET['id'];
 
-<?php
 $post =
   [
     'img' => '/static/images/the_road_a_head.png',
     'title' => 'The Road Ahead',
     'subtitle' => 'The road ahead might be paved - it might not be.',
     'text' => [
-      'paragraf_1' => 'Dark spruce forest frowned on either side the frozen waterway. The trees had been stripped by a recent wind
+      'Dark spruce forest frowned on either side the frozen waterway. The trees had been stripped by a recent wind
       of
       their white covering of frost, and they seemed
       to lean towards each other, black and ominous, in the fading light. A vast silence reigned over the land. The
@@ -22,7 +20,7 @@ $post =
       eternity laughing at the futility of life and the effort of life. It was the Wild, the savage, frozen-hearted
       Northland Wild',
 
-      'paragraf_2' => 'But there was life, abroad in the land and defiant. Down the frozen waterway toiled a string of wolfish dogs.
+      'But there was life, abroad in the land and defiant. Down the frozen waterway toiled a string of wolfish dogs.
       Their bristly fur was rimed with frost. Their breath froze in the
       air as it left their mouths, spouting forth in spumes of vapour that settled upon the hair of their bodies and
       formed into crystals of frost. Leather harness was on the dogs, and
@@ -35,7 +33,7 @@ $post =
       narrow oblong box. There were other things on the sled—blankets, an axe, and a coffee-pot and frying-pan; but
       prominent, occupying most of the space, was the long and narrow oblong box.',
 
-      'paragraf_3' => 'In advance of the dogs, on wide snowshoes, toiled a man. At the rear of the sled toiled a second man. On the
+      'In advance of the dogs, on wide snowshoes, toiled a man. At the rear of the sled toiled a second man. On the
       sled, in the box, lay a third man whose toil was over,—a man whom the
       Wild had conquered and beaten down until he would never move nor struggle again. It is not the way of the Wild
       to like movement. Life is an offence to it, for life is movement; and
@@ -45,7 +43,7 @@ $post =
       restless of life, ever in revolt against the dictum that all movement must
       in the end come to the cessation of movement.',
 
-      'paragraf_4' => 'But at front and rear, unawed and indomitable, toiled the two men who were not yet dead. Their bodies were
+      'But at front and rear, unawed and indomitable, toiled the two men who were not yet dead. Their bodies were
       covered with fur and soft-tanned leather. Eyelashes and cheeks and lips were
       so coated with the crystals from their frozen breath that their faces were not discernible. This gave them the
       seeming of ghostly masques, undertakers in a spectral world at the funeral
@@ -68,20 +66,20 @@ $post =
     href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oxygen:wght@300;400;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="/static/styles/styles.css">
-  <title> The Road Ahead </title>
+  <title> <?= $post['title']?> </title>
 </head>
 <body class="page">
   <?php
     include 'header_post.php';
   ?>
   <section class="page-about">
-    <h1 class="page-about__title horizontal-center" > <?= $post['title']?> <?= $postid ?> </h1>
+    <h1 class="page-about__title horizontal-center" > <?= $post['title']?> <?= $postId ?> </h1>
     <p class="page-about__description horizontal-center"> <?= $post['subtitle']?> </p>
   </section>
-  <img class="page-img" src="<?= $post['img']?>" alt="The Road Ahead"/>
+  <img class="page-img" src="<?= $post['img']?>" alt="<?= $post['title']?>"/>
   <div class="page-content horizontal-center">
-    <?php foreach ($post['text'] as $paragraf): ?>
-      <p><?= $paragraf ?></p>
+    <?php foreach ($post['text'] as $paragraph): ?>
+      <p><?= $paragraph ?></p>
     <?php endforeach; ?>
   </div>
   <?php
