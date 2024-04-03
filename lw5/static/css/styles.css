@@ -1,0 +1,110 @@
+ul, li {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  list-style-type: none;
+}
+
+.page {
+  margin: 0;
+  padding: 0;
+}
+
+.horizontal-center {
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  width: 100%;
+}
+
+.header-menu {
+  margin: 17px auto;
+}
+
+.menu__logo-header {
+  text-decoration: none;
+  color:rgba(46, 46, 46, 1);
+  padding: 3px 0 11px 10px;
+  font: 400 26px/26px "Lora", sans-serif;
+}
+
+.menu__logo-footer {
+  text-decoration: none;
+  color: #fff;
+  padding: 3px 0 11px 10px;
+  font: 400 26px/26px "Lora", sans-serif;
+}
+
+.menu__list {
+  display: flex;
+  text-transform: uppercase;
+}
+
+.header-menu__list {
+  padding: 10px 20px;
+}
+
+.menu__link {
+  text-decoration: none;
+}
+
+.header-menu__link {
+  font: 400 12px/20px "Oxygen", sans-serif;
+  letter-spacing: 0.6px;
+  padding: 10px 20px;
+  color: rgba(46, 46, 46, 1);
+}
+
+.page-about {
+  text-align: center;
+  padding: 89px 0 38px;
+}
+
+.page-about__title {
+  font: 400 51px/50px "Lora", sans-serif;
+  letter-spacing: 2px;
+  padding: 0 0 20px 0;
+}
+
+.page-about__description {
+  font: 400 17px/20px "Oxygen", sans-serif;
+  color: rgba(46, 46, 46, 0.63);
+}
+
+.page-img {
+  width: 100%;
+}
+
+.page-content {
+  font: 400 24px/35px "Oxygen", sans-serif;
+  color: rgba(16, 19, 21, 1);
+  max-width: 960px;
+  padding: 140px 0 135px;
+}
+
+.footer {
+  background: center / cover no-repeat url("../img/footer_img.png");
+  height: 89px;
+}
+
+.footer__background {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(35, 47, 56, 0.6);
+  height: 100%;
+  width: 100%;
+}
+
+.footer-menu__link {
+  font: 400 11px/26px "Oxygen", sans-serif;
+  letter-spacing: 1px;
+  padding: 31px 20px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
