@@ -3,7 +3,6 @@
   const USERNAME = 'root';
   const PASSWORD = 'Qwerty123';
   const DATABASE = 'Blog';
-  echo "Connected successfully<br>";
   function createDBConnection(): mysqli
   {
     $conn = new mysqli(HOST, USERNAME, PASSWORD, DATABASE);

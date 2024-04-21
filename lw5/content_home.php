@@ -10,7 +10,7 @@ $title_other_card = 'Most Recent';
     <h3 class="content-title"> <?= $title_main_card ?> </h3>
     <div class="card-block gap-big">
         <?php
-          $sql = 'SELECT * FROM post WHERE featured = 0';
+          $sql = 'SELECT * FROM post WHERE featured = 1';
           $result = $conn->query($sql);
           if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {
@@ -26,7 +26,7 @@ $title_other_card = 'Most Recent';
     <h3 class="content-title"> <?= $title_other_card ?> </h3>
     <div class="card-block gap-small">
         <?php
-          $sql = 'SELECT * FROM post WHERE featured = 1';
+          $sql = 'SELECT * FROM post WHERE featured = 0';
           $result = $conn->query($sql);
           if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {

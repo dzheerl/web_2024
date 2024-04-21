@@ -1,18 +1,15 @@
-ul, li {
-  margin: 0;
-  padding: 0;
-  text-indent: 0;
-  list-style-type: none;
-  
-}
-
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
 }
 
-header {
+ul, li {
+  text-indent: 0;
+  list-style-type: none;
+}
+
+.header {
   background: center / cover no-repeat url("../img/header-background-img.jpg");
 }
 
@@ -26,14 +23,14 @@ header {
 }
 
 .header-menu {
-  margin: 0px auto;
+  margin: 0 auto;
   padding: 17px 0;
 }
 
 .logo {
   width: 92px;
   height: 26px;
-  padding: 0px 20px;
+  padding: 0 20px;
 }
 
 .menu__list {
@@ -148,11 +145,11 @@ header {
   gap: 24px;
 }
 
-.card__big {
+.card-wrapper_big {
   width: 460px;
 }
 
-.card__small {
+.card-wrapper_small {
   width: 296px;
   min-height: 291px;
 }
@@ -203,7 +200,7 @@ header {
 
 .title-big {
   font: 400 27px/30px "Lora", sans-serif;
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
 }
 
 .title-small {
@@ -224,7 +221,7 @@ header {
 .description-big {
   font: 400 14px/25px "Oxygen", sans-serif;
   color: rgba(255, 255, 255, 0.7);
-  padding: 6px 20px 0px 20px;
+  padding: 6px 20px 0 20px;
 }
 
 .description-small {

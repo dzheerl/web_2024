@@ -13,12 +13,12 @@ $header = [
 ?>
 
 <div class="header-menu menu">
-  <a class="menu__logo-header" href="#">
+  <a class="menu__logo-header" href="/home">
     Escape.
   </a>
   <ul class="header-menu__list menu__list">
     <li>
-      <a class="header-menu__link menu__link" href="#"> home </a>
+      <a class="header-menu__link menu__link" href="/home"> home </a>
     </li>
     <li>
       <a class="header-menu__link menu__link" href="#"> categories </a>
