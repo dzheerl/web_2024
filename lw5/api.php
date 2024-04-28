@@ -1,51 +1,58 @@
 <?php
 
-$method = $_SERVER['REQUEST_METHOD'];
-echo "{$method} <br>";
 
 $dataAsJson = file_get_contents("php://input");
 $dataAsArray = json_decode($dataAsJson, true);
-if ($dataAsArray["title"] == "") {
-  echo "тест";
-};
 
-if (empty($dataAsArray) || !isset($dataAsArray["title"])) {
-    echo "Ошибка: Некорректные данные или отсутствует обязательное поле 'name'";
+if (empty($dataAsArray)) {
+    echo "Ошибка: Заполните обязательные поля.";
+} elseif ($dataAsArray["title"] == "") {
+    echo "Ошибка: Заполните обязательное поле 'Название'.";
+} elseif ($dataAsArray["subtitle"] == "") {
+    echo "Ошибка: Заполните обязательное поле 'Заголовок'.";
+} elseif ($dataAsArray["content"] == "") {
+    echo "Ошибка: Заполните обязательное поле 'Содержание'.";
+} elseif ($dataAsArray["author"] == "") {
+    echo "Ошибка: Заполните обязательное поле 'Автор'.";
+} elseif ($dataAsArray["author_url"] == "") {
+    echo "Ошибка: Заполните обязательное поле 'URL автора'.";
+} elseif ($dataAsArray["publish_date"] == "") {
+    echo "Ошибка: Заполните обязательное поле 'Дата публикации'.";
+} elseif (!strtotime($dataAsArray["publish_date"])) {
+    echo "Ошибка: Некорректный формат даты публикации YYYY-MM-DD.";
+} elseif ($dataAsArray["featured"] !== "0" && $dataAsArray["featured"] !== "1") {
+      echo "Ошибка: Поле 'featured' должно быть равно '0' или '1'.";
 } else {
     addPost($dataAsArray);
-};
+}
+
 
 
 function addPost($dataAsArray) {
     include 'SQLconnect.php';
 
-    // Извлекаем необходимые данные из $dataAsArray
     $title = $dataAsArray["title"];
     echo "{$dataAsArray["title"]}";
-    $subtitle = $dataAsArray["subtitile"];
+    $subtitle = $dataAsArray["subtitle"];
     $content = $dataAsArray["content"];
     $author = $dataAsArray["author"];
     $author_url = $dataAsArray["author_url"];
-    $publish_date = $dataAsArray["publish_date"];
+    $publish_date = strtotime($dataAsArray["publish_date"]);
     $featured = $dataAsArray["featured"];
-
-    // Подготавливаем SQL запрос с использованием подготовленного выражения для безопасной вставки данных
     $sql = "INSERT INTO post (title, subtitle, content, author, author_url, publish_date, featured)
             VALUES (?, ?, ?, ?, ?, ?, ?)";
 
-    // Подготавливаем и выполняем запрос с использованием подготовленного выражения
     $stmt = $conn->prepare($sql);
     if ($stmt === false) {
         echo "Ошибка при подготовке запроса: " . $conn->error;
         return;
     }
 
-    // Привязываем параметры и выполняем запрос
     $stmt->bind_param('ssssssi', $title, $subtitle, $content, $author, $author_url, $publish_date, $featured);
     $result = $stmt->execute();
 
     if ($result) {
-        $lastInsertId = $conn->insert_id; // Получаем id последней вставленной записи
+        $lastInsertId = $conn->insert_id;
         $stmt->close();
         $imagePathEcho = "";
         $imagePathEcho = saveImage($dataAsArray['image'], $imagePathEcho, $lastInsertId, $conn);
@@ -58,14 +65,8 @@ function addPost($dataAsArray) {
         return false;
     }
 
-    // Закрываем запрос
     $stmt->close();
 }
-
-
-//$imagePathEcho = "";
-//$imagePathEcho = saveImage($dataAsArray['image'], $imagePathEcho);
-//echo "<br>{$imagePathEcho}";
 
 function saveImage(string $imageBase64, $imagePath,  $lastInsertId, $conn) {
 
@@ -74,6 +75,7 @@ function saveImage(string $imageBase64, $imagePath,  $lastInsertId, $conn) {
   $imageDecoded = base64_decode($imageBase64Array[1]);
 
   saveFile("static/img/post_id_{$lastInsertId}.{$imgExtention}", $imageDecoded);
+
   $imagePath = "static/img/post_id_{$lastInsertId}.{$imgExtention}";
   $sql = "UPDATE post
           SET image_url = '{$imagePath}'
@@ -83,7 +85,7 @@ function saveImage(string $imageBase64, $imagePath,  $lastInsertId, $conn) {
   return $imagePath;
 }
 
-function saveFile(string $file, string $data): void {
+function saveFile(string $file, string $data) {
   $myFile = fopen($file, 'w');
   if (!$myFile) {
     echo 'Произошла ошибка при открытии файла';

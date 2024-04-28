@@ -1,11 +1,11 @@
 <?php
-$postId = $_GET['id'];
-include 'SQLconnect.php';
+  $postId = $_GET['id'];
+  include 'SQLconnect.php';
 
-$sql = "SELECT * FROM post WHERE post_id = {$postId}";
-$result = $conn->query($sql);
-$row = $result->fetch_assoc();
-$text = explode('\n', $row['content']);
+  $sql = "SELECT * FROM post WHERE post_id = {$postId}";
+  $result = $conn->query($sql);
+  $row = $result->fetch_assoc();
+  $text = explode('\n', $row['content']);
 ?>
 
 <!DOCTYPE html>
